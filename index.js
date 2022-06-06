@@ -91,8 +91,6 @@ const getUserData = () => {
     return JSON.parse(jsonData);
 }
 
-const PORT = process.env.port || 8080;
-
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log(`Listening to port`);
 })
